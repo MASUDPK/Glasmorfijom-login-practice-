@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building - Login Demo</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================================
+       START: LOGIN SCREEN
+  ================================= -->
+  <main id="loginScreen" class="page">
+
+    <section class="glass-login">
+
+      <div class="brand-icon">
+        <i class="fa-solid fa-building"></i>
+      </div>
+
+      <h1>Smart Building</h1>
+      <p class="subtitle">Management System</p>
+
+      <div class="welcome">
+        <span>Welcome back</span>
+        <small>Please login to continue</small>
+      </div>
+
+      <form id="loginForm">
+
+        <label for="username">Username</label>
+        <div class="input-box">
+          <i class="fa-solid fa-user"></i>
+          <input id="username" type="text" placeholder="Enter username" autocomplete="username">
+        </div>
+
+        <label for="password">Password</label>
+        <div class="input-box">
+          <i class="fa-solid fa-lock"></i>
+          <input id="password" type="password" placeholder="Enter password" autocomplete="current-password">
+          <button type="button" class="eye-btn" id="togglePassword" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+
+        <button class="login-btn" type="submit">
+          <span>Login</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p id="loginMessage" class="login-message"></p>
+      </form>
+
+      <div class="demo-info">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Demo: <b>admin</b> / <b>1234</b></span>
+      </div>
+
+    </section>
+
+    <p class="footer-text">© 2026 Smart Building Management</p>
+  </main>
+  <!-- ================================
+       END: LOGIN SCREEN
+  ================================= -->
+
+
+  <!-- ================================
+       START: DEMO DASHBOARD
+  ================================= -->
+  <main id="dashboardScreen" class="dashboard page hidden">
+
+    <header class="topbar glass-panel">
+      <div class="brand-small">
+        <div class="mini-icon">
+          <i class="fa-solid fa-building"></i>
+        </div>
+        <div>
+          <strong>Smart Building</strong>
+          <small>Management System</small>
+        </div>
+      </div>
+
+      <button id="logoutBtn" class="logout-btn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+      </button>
+    </header>
+
+    <section class="hero glass-panel">
+      <div>
+        <span class="eyebrow">ADMIN DASHBOARD</span>
+        <h2>Good to see you, Admin 👋</h2>
+        <p>This is a practice dashboard for the new glass design.</p>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card glass-panel">
+        <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+        <span>Building Name</span>
+        <strong>Jamila Bhavan 1</strong>
+      </div>
+
+      <div class="stat-card glass-panel">
+        <div class="stat-icon"><i class="fa-solid fa-coins"></i></div>
+        <span>Total Project Expense</span>
+        <strong>৳ 0.00</strong>
+      </div>
+
+      <div class="stat-card glass-panel">
+        <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <span>Total Paid</span>
+        <strong>৳ 0.00</strong>
+      </div>
+
+      <div class="stat-card glass-panel">
+        <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+        <span>Total Due</span>
+        <strong>৳ 0.00</strong>
+      </div>
+    </section>
+
+  </main>
+  <!-- ================================
+       END: DEMO DASHBOARD
+  ================================= -->
+
+  <script src="script.js"></script>
+</body>
+</html>
